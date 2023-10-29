@@ -447,6 +447,7 @@ margin-bottom: 16px;
 }
 .footer_logo_section{
     display: flex;
+    gap: 16px;
 }
 .footer_logo_header{
     width: 40px;
