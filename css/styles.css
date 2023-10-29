@@ -333,11 +333,12 @@ margin-bottom: 72px;
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ 
 }
 .portfolio_row:hover .hidden_text{
     transform: translateY(0%);
-    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+    }
 .img_ang_hidden{
     position: relative;
     overflow: hidden;
@@ -401,7 +402,10 @@ text-align: left;
 }
 .footer_section_conteyner{
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+.footer_link_and_p{
+    margin-right: 120px
 }
 .logo_link_down_ff{
     display: inline-block; 
@@ -439,10 +443,10 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.32px;
+margin-bottom: 16px;
 }
 .footer_logo_section{
     display: flex;
-    gap: 16px;
 }
 .footer_logo_header{
     width: 40px;
@@ -455,15 +459,17 @@ letter-spacing: 0.32px;
     justify-content: center;
     width: 100%;
     height: 100%;
-    border-radius: 10vmax;
+    border-radius: 50%;
     background-color: #4D5AE5;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer_logo_li:hover{
     background-color: #31D0AA;
 }
+.footer_logo_li:focus{
+    background-color: #31D0AA;
+}
 .footer_in_teamlist{
-    width: 24px;
-    height: 24px;
     flex-shrink: 0;
     fill: #F4F4FD;
 }
