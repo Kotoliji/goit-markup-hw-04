@@ -281,7 +281,6 @@ text-align: center;
     width: 40px;
 height: 40px;
 flex-shrink: 0;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team_logo_li{
     display: flex;
@@ -291,11 +290,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
     border-radius: 50%;
     background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team_logo_li:hover{
     background-color: #404BBF;
 }
-.team_logo_li:active{
+.team_logo_li:focus{
     background-color: #404bbf;
 }
 .logo_in_teamlist{
