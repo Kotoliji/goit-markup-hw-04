@@ -332,16 +332,16 @@ margin-bottom: 72px;
     width: calc((100% - 48px) / 3);
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio_row:hover .hidden_text_container{
-    transform: translateY(0);
+    transform: translateY(0%);
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .img_ang_hidden{
     position: relative;
     overflow: hidden;
-}
-.hidden_text_container{
-height: 100%;
+    height: 100%;
 width: 100%;
 flex-shrink: 0;
 position: absolute;
@@ -351,6 +351,7 @@ background-color: var(--IRIS, #4D5AE5);
 transform: translateY(100%);
 transition: transform 250ms ease-in-out;
 }
+
 .hidden_text{
     width: 296px;
     color: var(--CLOUD, #F4F4FD);
